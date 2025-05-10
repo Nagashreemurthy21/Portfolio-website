@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000014;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d0d1a;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav .left {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .purple-dot {
+    color: #a259ff;
+  }
+  nav .right ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  nav .right ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav .right ul li a:hover,
+  .contact-button {
+    color: #a259ff;
+  }
+  
+  .firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+  }
+  .leftsection {
+    flex: 1;
+    max-width: 500px;
+  }
+  .leftsection .greeting {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  .leftsection .name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #a259ff;
+  }
+  .leftsection .passion-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  #element {
+    color: #ff91ff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 10px;
+  }
+  .rightsection {
+    flex: 1;
+    max-width: 400px;
+  }
+  .rightsection img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 60px auto;
+    width: 80%;
+  }
+  
+  .contentSection {
+    padding: 50px;
+    text-align: center;
+  }
+  .text-gray {
+    color: gray;
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    margin: 10px 0 30px;
+    color: #a259ff;
+  }
+  
+  .experience-item {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  .experience-item h3 {
+    color: white;
+  }
+  .experience-item .company-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .experience-item .duration {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .experience-description {
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .skill-tag {
+    background-color: #26263a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background 0.3s;
+  }
+  .skill-tag:hover {
+    background-color: #a259ff;
+  }
+  
+  footer {
+    background-color: #0d0d1a;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .social-links a {
+    color: #a259ff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  footer p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  #tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  @media (max-width: 768px) {
+    .firstsection {
+      flex-direction: column-reverse;
+      padding: 30px;
+    }
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
